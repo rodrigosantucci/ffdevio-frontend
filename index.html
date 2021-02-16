@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O melhor serviço de Fast Food de todos os tempos!!!!">
+    <meta name="author" content="Rodrigo Santucci">
+    <title>Bem-vindo(a) Devio Fast Food</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+  	<header id="index"> 
+      <div id="title">
+        <h1><i class="fa fa-cutlery"></i><a href="#"><span class="highlight"> Devio</span>-Fast-<span class="highlight">Food</span> </a></h1>
+      </div>
+      <nav class="topNav">
+        <a href="#" class="current">Inicio</a>
+        <div class="dropdown">
+                <a class="dropbtn"><a href="menu.html">Menu <i class="fa fa-caret-down"></i></a></a>
+                <div class="dropdown-content">
+                    <a href="menu.html#meal">Refeição</a>
+                    <a href="menu.html#snacks">Lanches</a>
+                    <a href="menu.html#drinks">Bebidas</a>
+                    <a href="menu.html#combo">Combo</a>
+                </div>
+            </div>
+            <a href="./login.html" class="current">Login</a>
+    <!-- 		<a href="signup.html">Signup</a> --> 
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+      </nav>
+  	</header>
+    <h1 class="welcome">Bem-vindo(a) ao Devio Fast Food</h1><br>
+    <h2><i>"O melhor serviço de Fast Food da face da terra!!!!"</i></h2>
+    <p>Nao esqueça de checar nosso <a href="menu" class="current">MENU</a></p>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="../imgs/restaurant3.jpg" style="width:100%">
+            <div class="text">Come on in<br>Our restaurant is always warm and open!</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="../imgs/smallchops.jpg" style="width:100%">
+            <div class="text">Feast yourself on our delightful small chops</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="../imgs/background.png" style="width:100%">
+            <div class="text">Our Burgers are deliciously awesome</div>
+        </div>          
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="../imgs/combo/burger-fries-drink.png" style="width:100%">
+            <div class="text">Did I hear you say OMG!</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="../imgs/drinks/cocktailspecial.jpg" style="width:100%">
+            <div class="text">Tried one of our arousing cocktail flavours?</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="../imgs/specials.jpg" style="width:100%">
+            <div class="text">Hmmm... a taste is all you need</div>
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    </div>
+
+    
+		   <!-- End container div -->
+		</div>
+    <script>
+        /******SLIDESHOW***** */
+        let slideIndex = 0;
+        const showSlides = () => {
+            const slides = document.getElementsByClassName('mySlides');
+            const dots = document.getElementsByClassName('dot');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex += 1;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].className += ' active';
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        };
+        showSlides()
+    </script>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

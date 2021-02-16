@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="O melhor serviço de Fast Food de todos os tempos!!!!">
+		<meta name="author" content="Rodrigo Santucci">
+		<title>Devio Fast Food | Login</title>
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/forms.css">
+		<link rel="stylesheet" href="/css/nav.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<header> 
+				<div id="title">
+					<h1><a href="./index.html"><i class="fa fa-cutlery"></i><span class="highlight"> Devio</span>-Fast-<span class="highlight">Food</span> </a></h1>
+				</div>
+				<nav class="topNav">
+					<a href="index.html">Inicio</a>
+					<div class="dropdown">
+						<a class="dropbtn"><a href="menu.html">Menu <i class="fa fa-caret-down"></i></a></a>
+						<div class="dropdown-content">
+							<a href="menu.html#meal">Refeição</a>
+							<a href="menu.html#snacks">Lanches</a>
+							<a href="menu.html#drinks">Bebidas</a>
+							<a href="menu.html#combo">Combo</a>
+						</div>
+					</div>
+					<a href="#" class="current">Login</a>
+			<!-- 		<a href="signup.html">Signup</a> --> 
+					<a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+				</nav>
+			</header>
+			<h1 class="formTitle">Login</h1>
+			<h4>Ja possui conta? Efetue o Login, ou Clique em <a href="/signup.html">Cadastro</a> para se registrar.</h4>
+			<br>
+			<div id="loginForm">
+				<form>
+					<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+					<div id="usernameErr"></div>
+					<label for="usernameEmail">Nome ou Email</label>
+					<input class="userForm" id="nomeEmail" name="nomeEmail" placeholder="Entre com seu Nome ou Email" required>
+					<div id="emailErr"></div>
+					<label for="password">Senha</label>
+					<input class="userForm" id="senha" name="senha" type="password" placeholder="Insira sua senha" required>
+					<div id="passwordErr"></div>
+					<div><input type="checkbox" id="checkbox" onclick="togglePassword()">Mostrar senha</div>
+					<div id="password2Err"></div>
+					<button id="loginBtn" type="button">Login</button>
+					<a href="#" class="white">Esqueceu a senha?</a>
+				</form>
+			</div>
+		</div>
+        <script>
+            function togglePassword() {
+                const input = document.getElementById("password");
+                if (input.type === "password") {
+                    input.type = "text";
+                } else {
+                    input.type = "password";
+                }
+            }
+		</script>
+		<script src="/js/scripts.js"></script>
+		<script src="/app/js/login.js"></script>
+		<script src="/app/js/username.js"></script>
+	</body>
+</html>

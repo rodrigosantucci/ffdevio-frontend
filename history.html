@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="O melhor serviço de Fast Food de todos os tempos!!!!">
+  <meta name="author" content="Rodrigo Santucci">
+  <title>Order history</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <header> 
+        <div id="title">
+          <h1><i class="fa fa-cutlery"></i><a href="./index.html"><< class="highlight"> Devio</>-Fast-<span class="highlight">Food</span> </a></h1>
+        </div>
+        <nav class="topNav" id="menuNav">
+          <a href="userIndex.html">Inicio</a>
+          <div class="dropdown">
+            <a class="dropbtn"><a href="userMenu.html" class="current">Menu <i class="fa fa-caret-down"></i></a></a>
+            <div class="dropdown-content">
+                <a href="userMenu.html#meal">Refeição</a>
+                <a href="userMenu.html#snacks">Lanches/a>
+                <a href="userMenu.html#drinks">Bebidas</a>
+                <a href="userMenu.html#combo">Combo</a>
+            </div>
+          </div>
+					<div class="dropdown">
+            <a class="dropbtn"><a class="me"> </a></a>
+            <div class="dropdown-content">
+            </div>
+          </div>
+          <a href="#" id='logout'>Sair</a>
+          <a href="javascript:void(0);" class="icon">&#9776;</a>
+        </nav>
+    </header> 
+    <div class="menu" id="history" style="padding-bottom: 10px">
+      <br><h1 style="box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);"><i>Historico de Pedidos</i></h1>
+    </div>
+    <div class = "last">
+      <p id="msg"></p>
+      <table id="tableHistory">
+        <thead>
+        <tr>
+          <th>Pedido ID</th>
+          <th>Comida</th>
+          <th>Quantidade</th>
+          <th>Valor</th>  
+          <th>Status</th>
+          <th>Data</th>
+        </tr>
+        </thead>
+        <tbody id="histTableBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="/app/js/username.js"></script>
+  <script src="/app/js/history.js"></script>
+  <script src="/js/scripts.js"></script>
+  <script src="/js/cart.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="O melhor serviço de Fast Food de todos os tempos!!!!">
+		<meta name="author" content="Rodrigo Santucci">
+		<title>Devio Fast Food | SignUp</title>
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/forms.css">
+		<link rel="stylesheet" href="/css/nav.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<header> 
+				<div id="title">
+					<h1><a href="index.html"><i class="fa fa-cutlery"></i><span class="highlight"> Devio</span>-Fast-<span class="highlight">Food</span> </a></h1>
+				</div>
+				<nav class="topNav">
+					<a href="index.html">Inicio</a>
+					
+					<div class="dropdown">
+							<a class="dropbtn"><a href="menu">Menu <i class="fa fa-caret-down"></i></a></a>
+							<div class="dropdown-content">
+									<a href="menu.html#meal">Refeição</a>
+									<a href="menu.html#snacks">Lanches</a>
+									<a href="menu.html#drinks">Bebidas</a>
+									<a href="menu.html#combo">Combo</a>
+							</div>
+					</div>
+					<a href="login">Login</a>
+					<a href="#" class="current">Signup</a>
+					<a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+				</nav>
+			</header>
+			<h1 class="formTitle">Crie uma cota</h1>
+			<h2>Novos Clientes</h2>
+			
+			<br>
+			<div id="signupForm">
+					<form>
+						<i style="color: red; text-shadow: 1.2px 1.2px 1px black;">All fields below are required</i>
+						<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+						<div id="usernameErr"></div>
+						<label for="username">Nome</label>
+							<input id="username" name="username" placeholder="Entre com seu nome" autocomplete="off" autofocus required>
+						<label for="email">Email</label>
+							<input id="email" name="email" type="email" placeholder="Entre com seu endereco de Email" required>
+							<div id="emailErr"></div>
+							<label for="password">Senha</label>
+							<input id="password" name="password" type="password" placeholder="Crie uma senha" required>
+							<div id="passwordErr"></div>
+							<label for="password2">Confirmar senha</label>
+							<input id="password2" name="password2" type="password" placeholder="Repita a senha criada" required>
+							<div id="password2Err"></div>
+						<button id="signupBtn" type="submit">Criar Conta</button>
+						<span class="white">Já registrado? <a href="./login.html">Login</a></span>
+					</form>
+				</div>
+			</div>
+			<div class="last">	
+			</div>
+	
+		<script src="/js/scripts.js"></script>
+		<script src="/app/js/user.js" type="module"></script>
+	</body>
+</html>
